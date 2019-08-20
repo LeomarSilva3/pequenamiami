@@ -28,16 +28,26 @@ Dado("que visualizo as promoções de produtos") do
 
   within_frame('tempId') do 
       promocoes_instagram = all('.lightwidget__tile')
-       expect(promocoes_instagram.size).to be > 0
-       puts promocoes_instagram.size
+      expect(promocoes_instagram.size).to be > 0
+      #puts promocoes_instagram.size
   end
 end
 
 Quando("seleciono um produto com promoção de sorteio") do
+  script= '$(".lightwidget-widget").attr("id", "tempId");'
+  page.execute_script(script)
  
+  within_frame('tempId') do 
+    promocoes_instagram = all('.lightwidget__tile')
+    promocoes_instagram[0].click() 
+  end
+    
 end
 
 Então("visualizo o produto escolhido na pagina do Instagram") do
- 
+  visit('https://www.instagram.com/p/ByxP67ihOcb/')
+  produto = find('.BrX75')
+  expect(produto.text).to eql "pequenamimi"
+  
 end
 

@@ -20,7 +20,7 @@ Funcionalidade: Home page
           | Pijama 12 meses | 79,00 |
          Então vou visualizar a descrição e o Preço para cada produto
 
-    @temp
+    @temp1
      Cenario: Visualizar as promoçoes de um produto no Instagram
          Dado que visualizo as promoções de produtos
          Quando seleciono um produto com promoção de sorteio
