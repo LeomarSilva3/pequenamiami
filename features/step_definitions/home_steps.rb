@@ -1,16 +1,15 @@
 Dado("que visualizo a url {string}") do |string|
-  visit '/'
-  
+  @homepage.go 
 end
 
 Então("visualizo as ultimas ofertas na pagina principal do site") do
-   ofertas_principais = all('.produto-item') #busca todos os produtos
-   expect(ofertas_principais.size).to be > 0
-   puts ofertas_principais.size # busca a quantidade de produtos
+   @homepage.ultimas_ofertas()
+   expect(@homepage.ultimas_ofertas.size).to be > 0
+   puts @homepage.ultimas_ofertas.size # busca a quantidade de produtos
 end
 
-Dado("que visualizo as ofertas principais") do |table|
-  Produto = table.hashes
+Dado("que visualizo as ofertas principais") do |ofertas|
+  @homepage.ofertas_principais(ofertas)
 end
 
 Então("vou visualizar a descrição e o Preço para cada produto") do
@@ -47,7 +46,7 @@ end
 Então("visualizo o produto escolhido na pagina do Instagram") do
   visit('https://www.instagram.com/p/ByxP67ihOcb/')
   produto = find('.BrX75')
-  expect(produto.text).to eql "pequenamimi"
+  expect(produto.text).to eql "pequenamiami"
   
 end
 
