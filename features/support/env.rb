@@ -2,6 +2,8 @@ require 'capybara'
 require 'capybara/cucumber'
 require 'capybara/rspec'
 require 'selenium-webdriver'
+require 'report_builder'
+require 'allure-cucumber'
 
 Capybara.configure do |config|
     config.default_driver = :selenium_chrome#_headless
