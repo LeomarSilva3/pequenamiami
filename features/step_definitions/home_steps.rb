@@ -2,7 +2,7 @@ Dado("que visualizo a url {string}") do |string|
   @homepage.go 
 end
 
-Então("visualizo as ultimas ofertas na pagina principal do site") do
+Dado("visualizo as ultimas ofertas na pagina principal do site") do
    @homepage.ultimas_ofertas()
    expect(@homepage.ultimas_ofertas.size).to be > 0
    

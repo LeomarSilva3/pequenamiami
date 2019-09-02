@@ -9,13 +9,10 @@ Funcionalidade: Home page
     Contexto: Visualiza a pagina do site pequenamiami
           Dado que visualizo a url "http://www.pequenamiami.com.br/"
 
-    @teste
-    Cenario: Visualizar as ultimas ofertas
-         Então visualizo as ultimas ofertas na pagina principal do site
-
 
     Cenario: Visualizar as descriçoes e preços de um produto
-         Dado que visualizo as ofertas principais
+         Dado visualizo as ultimas ofertas na pagina principal do site
+         Quando que visualizo as ofertas principais
           | descricao       | preco |
           | Pijama 12 meses | 79,00 |
          Então vou visualizar a descrição e o Preço para cada produto
