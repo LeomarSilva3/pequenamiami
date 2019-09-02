@@ -12,6 +12,8 @@ GEM
       uuid
     backports (3.14.0)
     builder (3.2.3)
+    bundle (0.0.1)
+      bundler
     capybara (3.18.0)
       addressable
       mini_mime (>= 0.1.3)
@@ -86,6 +88,7 @@ PLATFORMS
 
 DEPENDENCIES
   allure-cucumber
+  bundle
   capybara
   cucumber
   report_builder

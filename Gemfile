@@ -7,4 +7,5 @@ group :test do
   gem 'selenium-webdriver'
   gem "report_builder"
   gem "allure-cucumber"
+  gem "bundle"
 end
