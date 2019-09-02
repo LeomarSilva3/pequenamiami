@@ -9,7 +9,7 @@ Então("visualizo as ultimas ofertas na pagina principal do site") do
 end
 
 Dado("que visualizo as ofertas principais") do |ofertas|
-  @Produto = ofertas.hashes
+  Produto = ofertas.hashes
 end
 
 Então("vou visualizar a descrição e o Preço para cada produto") do
