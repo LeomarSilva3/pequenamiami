@@ -8,6 +8,7 @@ pipeline {
     stages {
         stage("Build") {
             steps {
+                sh "bundle update --bundler"
                 sh "bundle install"
             }
         }
