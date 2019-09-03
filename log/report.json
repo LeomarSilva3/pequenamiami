@@ -1,0 +1,254 @@
+[
+  {
+    "uri": "features/specs/home.feature",
+    "id": "home-page",
+    "keyword": "Funcionalidade",
+    "name": "Home page",
+    "description": "    Como usuario\n    Eu gostaria de visualizar a Home page sem estar autenticado\n    para que eu possa visualizar as principais ofertas do site",
+    "line": 3,
+    "elements": [
+      {
+        "keyword": "Contexto",
+        "name": "Visualiza a pagina do site pequenamiami",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.28.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18202
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.28.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8157
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "rack-test requires a rack application, but none was given (ArgumentError)\n./features/support/hooks.rb:2:in `Before'",
+              "duration": 115545
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que visualizo a url \"http://www.pequenamiami.com.br/\"",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/home_steps.rb:1"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page;visualizar-as-descriçoes-e-preços-de-um-produto",
+        "keyword": "Cenario",
+        "name": "Visualizar as descriçoes e preços de um produto",
+        "description": "",
+        "line": 13,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "visualizo as ultimas ofertas na pagina principal do site",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/home_steps.rb:5"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "que visualizo as ofertas principais",
+            "line": 15,
+            "rows": [
+              {
+                "cells": [
+                  "descricao",
+                  "preco"
+                ]
+              },
+              {
+                "cells": [
+                  "Pijama 12 meses",
+                  "79,00"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/home_steps.rb:11"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "vou visualizar a descrição e o Preço para cada produto",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/home_steps.rb:15"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "rack-test requires a rack application, but none was given (ArgumentError)\n./features/support/hooks.rb:19:in `add_screenshot'\n./features/support/hooks.rb:8:in `After'",
+              "duration": 139555
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.28.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11618
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "Visualiza a pagina do site pequenamiami",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.28.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9660
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.28.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13558
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "rack-test requires a rack application, but none was given (ArgumentError)\n./features/support/hooks.rb:2:in `Before'",
+              "duration": 74424
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que visualizo a url \"http://www.pequenamiami.com.br/\"",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/home_steps.rb:1"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page;visualizar-as-promoçoes-de-um-produto-no-instagram",
+        "keyword": "Cenario",
+        "name": "Visualizar as promoçoes de um produto no Instagram",
+        "description": "",
+        "line": 20,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que visualizo as promoções de produtos",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/home_steps.rb:24"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "seleciono um produto com promoção de sorteio",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/home_steps.rb:35"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "visualizo o produto escolhido na pagina do Instagram",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/home_steps.rb:46"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "rack-test requires a rack application, but none was given (ArgumentError)\n./features/support/hooks.rb:19:in `add_screenshot'\n./features/support/hooks.rb:8:in `After'",
+              "duration": 114661
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.28.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8828
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
