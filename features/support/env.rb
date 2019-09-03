@@ -15,8 +15,8 @@ CONFIG = YAML.load_file(File.join(Dir.pwd, "features/support/config/#{ENV["ENV_T
     when "chrome"
         @driver = :selenium_chrome
     when "headless"
-        Capybara.register_driver :selenium_headless do |app|
-            chrome_options = Selenium::WebDriver::Chrome::OPtions.new.tap do |options|
+        Capybara.register_driver :selenium_chrome_headless do |app|
+            chrome_options = Selenium::WebDriver::Chrome::Options.new.tap do |options|
                 options.add_argument "--headless"
                 options.add_argument "--disable-gpu"
                 options.add_argument "--no-sandbox"
