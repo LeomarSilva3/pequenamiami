@@ -11,11 +11,11 @@ CONFIG = YAML.load_file(File.join(Dir.pwd, "features/support/config/#{ENV["ENV_T
 #configuração para execução de browsers
 case ENV["BROWSER"]
 when "firefox"
-    @driver :selenium
+    @driver = :selenium
 when "chrome"
-    @driver :selenium_chrome
+    @driver = :selenium_chrome
 when "headless"
-    @driver :selenium_chrome_headless
+    @driver = :selenium_chrome_headless
 begin
     puts "Invalid Browser"
 end        
