@@ -23,7 +23,5 @@ end
 Capybara.configure do |config|
     config.default_driver = @driver#:selenium_chrome#_headless
     config.default_max_wait_time = 20
-    config.app_host = CONFIG["url"]
-    
-    
+    config.app_host = CONFIG["url"]    
 end
